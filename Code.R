@@ -212,3 +212,33 @@ plot(exp(pred.lm),testing$MEDV,
 
 #summary of the regression model
 summary(fit.lm)
+
+Call:
+lm(formula = log(MEDV) ~ ., data = training)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.63135 -0.10008 -0.00679  0.10029  0.77855 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.02184    0.01066 283.513  < 2e-16 ***
+CRIM        -0.09229    0.01421  -6.496 4.11e-10 ***
+ZN           0.02809    0.01594   1.762  0.07929 .  
+INDUS        0.02322    0.02082   1.115  0.26584    
+CHAS         0.02948    0.01099   2.684  0.00774 ** 
+NOX         -0.09863    0.02265  -4.355 1.91e-05 ***
+RM           0.07977    0.01662   4.800 2.67e-06 ***
+AGE         -0.00911    0.01860  -0.490  0.62475    
+DIS         -0.09084    0.02054  -4.424 1.42e-05 ***
+RAD          0.11151    0.02683   4.156 4.38e-05 ***
+TAX         -0.12473    0.02899  -4.302 2.38e-05 ***
+PTRATIO     -0.09238    0.01391  -6.640 1.79e-10 ***
+B            0.01632    0.01315   1.242  0.21540    
+LSTAT       -0.16637    0.02007  -8.290 5.87e-15 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1762 on 263 degrees of freedom
+Multiple R-squared:  0.8217,	Adjusted R-squared:  0.8129 
+F-statistic: 93.26 on 13 and 263 DF,  p-value: < 2.2e-16
